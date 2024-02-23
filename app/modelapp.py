@@ -22,14 +22,10 @@ st.title("Text Classification Model")
 
 st.header("Model Description")
 st.write("This model is a fine-tuned version of the distilbert-base-uncased model on Hugging Face. DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts using the BERT base model.")
-st.write("The model is trained to classify payment reasons into one of the following categories:")
+st.write("The model is trained to classify an expenditure for BUSINESS OWNERS based on the reason attached to it in a mobile wallet. The classification is into one of the following categories:")
 st.write(categories)
 
 st.markdown("[Read more about DistilBert base model here](https://huggingface.co/distilbert/distilbert-base-uncased)")
-
-
-st.header("Model Parameters and configuration")
-st.write(model)
 
 
 st.header("Try it out")
