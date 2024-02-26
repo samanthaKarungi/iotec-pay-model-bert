@@ -3,8 +3,8 @@ from transformers import DistilBertForSequenceClassification, DistilBertTokenize
 import torch
 import torch.nn.functional as F
 
-model = DistilBertForSequenceClassification.from_pretrained('./model/fine-tuned-model')
-tokenizer = DistilBertTokenizer.from_pretrained('./model/tokenizer')
+model = DistilBertForSequenceClassification.from_pretrained('samanthakarungi/fine-tuned-bert')
+tokenizer = DistilBertTokenizer.from_pretrained('samanthakarungi/fine-tuned-bert')
 
 categories = {
     'INVENTORY, SUPPLIES AND EQUIPMENT': 0,
